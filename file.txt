@@ -1,0 +1,27 @@
+rikesh@rikesh-Inspiron:~$ sudo -u postgres psql
+[sudo] password for rikesh: 
+could not change directory to "/home/rikesh": Permission denied
+psql (15.1 (Ubuntu 15.1-1.pgdg22.10+1))
+Type "help" for help.
+
+postgres=# \c test
+You are now connected to database "test" as user "postgres".
+
+
+test=# CREATE TABLE tests (
+test(# ID SERIAL PRIMARY KEY,
+test(# name VARCHAR(20),
+test(# email VARCHAR(20)
+test(# );
+CREATE TABLE
+
+
+
+const response = await fetch("http://localhost:5000/api/test/get_all", {
+    method:'GET',
+    header: {
+        'Content-Type': 'application/json'
+    }
+});
+const json = await response.json();
+console.log(json)
